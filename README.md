@@ -1,6 +1,3 @@
-Sure, here's the updated README.md file in the specified format for your TO-DO application:
-
-```markdown
 # TO-DO APPLICATION
 
 ## Overview
