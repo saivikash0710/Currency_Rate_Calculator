@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #007BFF; /* Primary color for text and buttons */
+    --secondary-color: #6C757D; /* Secondary color for text */
+    --background-color: #2C3E50; /* Dark background color */
+    --card-background-color: #ECF0F1; /* Light card background color */
+    --text-color: #343A40; /* Text color */
+    --button-bg: #007BFF; /* Button background color */
+    --button-hover-bg: #0056b3; /* Button hover color */
+    --button-color: #ffffff; /* Button text color */
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: var(--card-background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  header img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .currency select,
+  .currency input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    width: calc(50% - 10px);
+  }
+  
+  .currency input {
+    text-align: right;
+  }
+  
+  .swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .rate {
+    font-size: 14px;
+    color: var(--secondary-color);
+  }
+  
+  .btn {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  @media (max-width: 600px) {
+    .currency input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
