@@ -8,7 +8,7 @@ function calculate() {
   const currency_one = currencyOne.value;
   const currency_two = currencyTwo.value;
 
-  fetch(`https://v6.exchangerate-api.com/v6/db9dd06ef07d2112693c914d/latest/${currency_one}`)
+  fetch(`https://v6.exchangerate-api.com/v6/bd6400087360837cd808f5ff/latest/${currency_one}`)
     .then(res => res.json())
     .then(data => {
       const rate = data.conversion_rates[currency_two];
